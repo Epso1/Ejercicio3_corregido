@@ -42,7 +42,7 @@ public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.ViewHold
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         RecyclerItem item = mData.get(position);
-        // Bind data to the view here
+
         holder.textView.setText(item.getTitle());
         holder.imageView.setImageResource(item.getImage());
     }
